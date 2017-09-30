@@ -1,0 +1,21 @@
+package vehicle.rental.program;
+
+import java.util.*;
+
+public class AllAccountsIterator {
+    private int current;
+    private ArrayList<Account> accounts;
+    public AllAccountsIterator(ArrayList accounts)
+    {
+        current = 0;
+        this.accounts = accounts;
+    }
+    public boolean hasNext()
+    {
+        return current < accounts.size();
+    }
+    public Account next()
+    {
+        return accounts.get(current++);
+    }
+}
