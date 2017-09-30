@@ -1,0 +1,4 @@
+package vehicle.rental.program;
+public class AccountNotFoundException extends Exception{
+    
+}
