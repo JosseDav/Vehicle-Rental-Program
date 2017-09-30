@@ -1,0 +1,46 @@
+package vehicle.rental.program;
+public class Account {
+    private String numChargedTo;
+    private String name;
+    private Vehicle vehicle;
+    private boolean insurance;
+    public Account(String name, String numChargedTo, boolean insurance)
+    {
+        this.numChargedTo = numChargedTo;
+        this.name = name;
+        this.insurance = insurance;
+    }
+    public String getNumChargedTo()
+    {
+        return numChargedTo;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void setVehicle(Vehicle vehicle)
+    {
+        this.vehicle = vehicle;
+    }
+    public Vehicle getvehicle()
+    {
+        return vehicle;
+    }
+     public String toString()
+    {
+        return "Corporation: " + this.getName() + "\nAccount number: " + this.getNumChargedTo() + "\nInsurance Selected: " + getInsuranceInfo();
+    }
+    public String getInsuranceInfo()
+    {
+        if(insurance == true)
+            return "Yes";
+        else
+            return "No";
+    }
+    public boolean getInsurance()
+    {
+        return insurance;
+    }
+    
+    
+}
